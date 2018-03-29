@@ -161,10 +161,6 @@
         <exec executable="${phpcb.exec}">
             <arg value="--log" />
             <arg path="${build.dir}/logs" />
-            <arg value="--ignore" />
-            <arg path="${basedir}/resources" />
-            <arg value="--ignore" />
-            <arg path="${basedir}/Orchid/Admin/theme" />
             <arg value="--source" />
             <arg path="${src.dir}" />
             <arg value="--output" />
