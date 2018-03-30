@@ -14,4 +14,9 @@ interface Constants
      * A shortened version of DIRECTORY_SEPARATOR
      */
     public const DS = DIRECTORY_SEPARATOR;
+
+    /**
+     * Defines the separator between parts of the cachekey and is used to replace '/'.
+     */
+    public const CACHEKEY_SEPARATOR = '#';
 }
