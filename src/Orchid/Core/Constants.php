@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace Orchid;
+namespace Orchid\Core;
 
 /**
  * This interface defines the constants used by the Orchid platform. The reason why this is used rather than
