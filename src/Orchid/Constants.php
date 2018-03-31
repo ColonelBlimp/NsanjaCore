@@ -19,4 +19,9 @@ interface Constants
      * Defines the separator between parts of the cachekey and is used to replace '/'.
      */
     public const CACHEKEY_SEPARATOR = '#';
+
+    /**
+     * Defines the extension for JSON files.
+     */
+    public const JSON_FILE_EXT = '.json';
 }
