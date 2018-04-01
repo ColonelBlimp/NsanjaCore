@@ -3,10 +3,11 @@
 namespace Orchid\Core;
 
 /**
- * This interface defines the constants used by the Orchid platform. The reason why this is used rather than
- * <code>define</code> within a file is that this interface can be namespaced!
+ * This interface defines the constants used by the Orchid platform and are at it's core. The reason why
+ * this is interface used rather than <code>define</code> within a file is that this interface can be namespaced!
  * @author Marc L. Veary
- * @namespace Orchid
+ * @namespace Orchid\Core
+ * @package Orchid
  */
 interface Constants
 {
@@ -24,4 +25,14 @@ interface Constants
      * Defines the extension for JSON files.
      */
     public const JSON_FILE_EXT = '.json';
+
+    /**
+     * Defines the prefix for any category URI (e.g. [FQDN]/uri_prefix/slug)
+     */
+    public const URI_PREFIX_CATEGORY = 'category';
+
+    /**
+     * Defines the URI for the default category ([FQDN]/category/uncategorized)
+     */
+    public const DEFAULT_CATEGORY_SLUG = Constants::URI_PREFIX_CATEGORY.'/uncategorized';
 }
