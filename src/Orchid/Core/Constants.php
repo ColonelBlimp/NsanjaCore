@@ -27,9 +27,24 @@ interface Constants
     public const JSON_FILE_EXT = '.json';
 
     /**
-     * Defines the prefix for any category URI (e.g. [FQDN]/uri_prefix/slug)
+     * Defines the prefix for any author URI (e.g. [FQDN]/author/slug)
+     */
+    public const URI_PREFIX_AUTHOR = 'author';
+
+    /**
+     * Defines the prefix for any category URI (e.g. [FQDN]/category/slug)
      */
     public const URI_PREFIX_CATEGORY = 'category';
+
+    /**
+     * Defines the prefix for any image URI (e.g. [FQDN]/image/slug)
+     */
+    public const URI_PREFIX_IMAGE = 'image';
+
+    /**
+     * Defines the prefix for any page URI (e.g. [FQDN]/page/slug)
+     */
+    public const URI_PREFIX_PAGE = 'page';
 
     /**
      * Defines the URI for the default category ([FQDN]/category/uncategorized)
