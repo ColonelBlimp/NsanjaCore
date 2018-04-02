@@ -60,4 +60,9 @@ interface Constants
      * Defines the deafult date format.
      */
     public const DEFAULT_DATE_FORMAT = 'Ymdhis';
+
+    /**
+     * Defines a forward slash for URLs ('/').
+     */
+    public const STR_FORWARD_SLASH = '/';
 }
