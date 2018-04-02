@@ -47,6 +47,11 @@ interface Constants
     public const URI_PREFIX_PAGE = 'page';
 
     /**
+     * Defines the prefix for any label URI (e.g. [FQDN]/label/slug)
+     */
+    public const URI_PREFIX_LABEL = 'label';
+
+    /**
      * Defines the URI for the default category ([FQDN]/category/uncategorized)
      */
     public const DEFAULT_CATEGORY_SLUG = Constants::URI_PREFIX_CATEGORY.'/uncategorized';

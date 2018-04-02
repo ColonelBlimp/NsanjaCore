@@ -16,5 +16,6 @@ class CoreTest extends TestCase
         $this->assertSame('image', Constants::URI_PREFIX_IMAGE);
         $this->assertSame('page', Constants::URI_PREFIX_PAGE);
         $this->assertSame('Ymdhis', Constants::DEFAULT_DATE_FORMAT);
+        $this->assertSame('label', Constants::URI_PREFIX_LABEL);
     }
 }
