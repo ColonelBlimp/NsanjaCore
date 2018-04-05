@@ -17,5 +17,9 @@ class CoreTest extends TestCase
         $this->assertSame('page', Constants::URI_PREFIX_PAGE);
         $this->assertSame('Ymdhis', Constants::DEFAULT_DATE_FORMAT);
         $this->assertSame('label', Constants::URI_PREFIX_LABEL);
+        $this->assertSame('category/uncategorized', Constants::DEFAULT_CATEGORY_SLUG);
+        $this->assertSame('Ymdhis', Constants::DEFAULT_DATE_FORMAT);
+        $this->assertSame('/', Constants::STR_FORWARD_SLASH);
+        $this->assertSame('/pg/', Constants::STR_PAGING_CTX);
     }
 }
