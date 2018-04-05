@@ -65,4 +65,9 @@ interface Constants
      * Defines a forward slash for URLs ('/').
      */
     public const STR_FORWARD_SLASH = '/';
+
+    /**
+     * Defines the context for pagination (e.g. /root_content/pg/1 = page 1 for 'root_context').
+     */
+    public const STR_PAGING_CTX = '/pg/';
 }
