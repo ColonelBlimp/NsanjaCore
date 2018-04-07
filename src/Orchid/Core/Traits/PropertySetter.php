@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace Core\Traits;
+namespace Orchid\Core\Traits;
 
 /**
  * @author Marc L. Veary
@@ -18,9 +18,6 @@ trait PropertySetter
      */
     protected function setProperty(string $key, array $data, &$property, $default = null): void
     {
-        if (property_exists($this, $property)) {
-            return;
-        }
         if (isset($data[$key])) {
             $property = $data[$key];
             return;

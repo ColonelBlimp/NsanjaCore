@@ -2,6 +2,7 @@
 
 use Orchid\Core\Constants;
 use PHPUnit\Framework\TestCase;
+use Orchid\Core\Traits\PropertySetter;
 
 class CoreTest extends TestCase
 {
@@ -21,5 +22,33 @@ class CoreTest extends TestCase
         $this->assertSame('Ymdhis', Constants::DEFAULT_DATE_FORMAT);
         $this->assertSame('/', Constants::STR_FORWARD_SLASH);
         $this->assertSame('/pg/', Constants::STR_PAGING_CTX);
+    }
+
+    public function testPropertySetterTrait()
+    {
+        $data = ['KEY_TEST' => 'test data'];
+        $class = new test($data);
+        $this->assertSame('test data', $class->getProperty());
+
+        $data = ['KEY_TEST_FAIL' => 'test data'];
+        $class = new test($data);
+        $this->assertNull($class->getProperty());
+    }
+}
+
+class test
+{
+    use PropertySetter;
+
+    private $property;
+
+    public function __construct(array $data)
+    {
+        $this->setProperty('KEY_TEST', $data, $this->property);
+    }
+
+    public function getProperty()
+    {
+        return $this->property;
     }
 }
