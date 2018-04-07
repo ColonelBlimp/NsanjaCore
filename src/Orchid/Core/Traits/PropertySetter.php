@@ -23,6 +23,10 @@ trait PropertySetter
             return;
         }
 
-        $property = $default;
+        // Only set the property to the default IF it is NOT null. Otherwise leave the value of the property as set
+        // in the class.
+        if ($default !== null) {
+            $property = $default;
+        }
     }
 }
