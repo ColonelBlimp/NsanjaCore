@@ -3,6 +3,7 @@
 use Orchid\Core\Constants;
 use PHPUnit\Framework\TestCase;
 use Orchid\Core\Traits\PropertySetter;
+use Orchid\Core\Traits\MagicOverrideForImmutable;
 
 class CoreTest extends TestCase
 {
@@ -34,6 +35,17 @@ class CoreTest extends TestCase
         $class = new test($data);
         $this->assertNull($class->getProperty());
     }
+
+    public function testImmutability()
+    {
+        $data = ['KEY_TEST' => 'test data'];
+        $class = new immutable($data);
+        $this->assertSame('test data', $class->getProperty());
+
+        $data = ['KEY_TEST' => 'test data'];
+        $class->property = 'SOMETHING';
+        unset($class->property);
+    }
 }
 
 class test
@@ -51,4 +63,9 @@ class test
     {
         return $this->property;
     }
+}
+
+class immutable extends test
+{
+    use MagicOverrideForImmutable;
 }
