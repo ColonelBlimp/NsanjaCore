@@ -1,9 +1,9 @@
 <?php declare(strict_types = 1);
 
 use Orchid\Core\Constants;
+use Orchid\Core\Traits\MagicOverrideForImmutableTrait;
+use Orchid\Core\Traits\PropertySetterTrait;
 use PHPUnit\Framework\TestCase;
-use Orchid\Core\Traits\PropertySetter;
-use Orchid\Core\Traits\MagicOverrideForImmutable;
 
 class CoreTest extends TestCase
 {
@@ -50,7 +50,7 @@ class CoreTest extends TestCase
 
 class test
 {
-    use PropertySetter;
+    use PropertySetterTrait;
 
     private $property;
 
@@ -67,5 +67,5 @@ class test
 
 class immutable extends test
 {
-    use MagicOverrideForImmutable;
+    use MagicOverrideForImmutableTrait;
 }
