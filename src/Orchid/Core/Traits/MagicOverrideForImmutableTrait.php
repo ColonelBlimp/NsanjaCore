@@ -8,7 +8,7 @@ namespace Orchid\Core\Traits;
  * @namespace Orchid\Core\Traits
  * @package Orchid
  */
-trait MagicOverrideForImmutable
+trait MagicOverrideForImmutableTrait
 {
     /**
      * Overridden to ensure this object is immutable.

@@ -7,7 +7,7 @@ namespace Orchid\Core\Traits;
  * @namespace
  * @package package_name
  */
-trait PropertySetter
+trait PropertySetterTrait
 {
     /**
      * Checks the given key is set in the data array, if so, the given property is set with the value.
