@@ -70,4 +70,9 @@ interface Constants
      * Defines the context for pagination (e.g. /root_content/pg/1 = page 1 for 'root_context').
      */
     public const STR_PAGING_CTX = '/pg/';
+
+    /**
+     * Defines the mode for use with <code>mkdir</code>.
+     */
+    public const FILE_MODE = 0775;
 }
