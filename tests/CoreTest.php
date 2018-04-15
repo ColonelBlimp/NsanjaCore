@@ -1,8 +1,8 @@
 <?php declare(strict_types = 1);
 
-use Orchid\Core\Constants;
-use Orchid\Core\Traits\MagicOverrideForImmutableTrait;
-use Orchid\Core\Traits\PropertySetterTrait;
+use Nsanja\Core\Constants;
+use Nsanja\Core\Traits\MagicOverrideForImmutableTrait;
+use Nsanja\Core\Traits\PropertySetterTrait;
 use PHPUnit\Framework\TestCase;
 
 class CoreTest extends TestCase

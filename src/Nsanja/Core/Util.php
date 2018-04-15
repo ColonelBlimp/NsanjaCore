@@ -1,11 +1,11 @@
 <?php declare(strict_types = 1);
 
-namespace Orchid\Core;
+namespace Nsanja\Core;
 
 /**
  * @author Marc L. Veary
- * @namespace Orchid\Core
- * @package Orchid
+ * @namespace Nsanja\Core
+ * @package Nsanja
  */
 final class Util
 {

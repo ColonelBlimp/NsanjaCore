@@ -1,12 +1,12 @@
 <?php declare(strict_types = 1);
 
-namespace Orchid\Core\Traits;
+namespace Nsanja\Core\Traits;
 
 /**
  * This trait overrides a class's magic methods which allow mutability.
  * @author Marc L. Veary
- * @namespace Orchid\Core\Traits
- * @package Orchid
+ * @namespace Nsanja\Core\Traits
+ * @package Nsanja
  */
 trait MagicOverrideForImmutableTrait
 {

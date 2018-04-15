@@ -5,7 +5,7 @@
 	"license" : "MIT",
 	"autoload" : {
 		"psr-4" : {
-			"Orchid\\" : "src/Orchid"
+			"Nsanja\\" : "src"
 		}
 	},
 	"require" : {

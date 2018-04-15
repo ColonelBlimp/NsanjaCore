@@ -1,7 +1,7 @@
 <?php declare(strict_types = 1);
 
+use Nsanja\Core\Util;
 use PHPUnit\Framework\TestCase;
-use Orchid\Core\Util;
 
 class UtilTest extends TestCase
 {

@@ -1,11 +1,11 @@
 <?php declare(strict_types = 1);
 
-namespace Orchid\Core\Traits;
+namespace Nsanja\Core\Traits;
 
 /**
  * @author Marc L. Veary
- * @namespace
- * @package package_name
+ * @namespace Nsanja\Core\Traits
+ * @package Nsanja
  */
 trait PropertySetterTrait
 {
