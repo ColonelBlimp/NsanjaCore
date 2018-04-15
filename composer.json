@@ -1,6 +1,6 @@
 {
 	"name" : "nsanja/core",
-	"minimum-stability" : "dev",
+	"minimum-stability" : "stable",
 	"type" : "library",
 	"license" : "MIT",
 	"autoload" : {
@@ -12,6 +12,6 @@
 		"php" : "^7.0"
 	},
 	"require-dev" : {
-		"phpunit/phpunit" : "~6.5.7@stable"
+		"phpunit/phpunit" : "~6.5.7"
 	}
 }

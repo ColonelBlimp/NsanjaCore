@@ -4,7 +4,7 @@
 
 	<property file="build.properties" />
 	<property name="build.dir" value="${basedir}/build" />
-	<property name="src.dir" value="${basedir}/${source}/Orchid" />
+	<property name="src.dir" value="${basedir}/${source}" />
 
 	<condition property="phpcs.exec" value="phpcs.bat" else="phpcs">
 		<os family="windows" />
@@ -43,7 +43,7 @@
 		<os family="windows" />
 	</condition>
 
-	<target name="build" depends="prepare">
+	<target name="build" depends="prepare, composer">
 		<antcall target="${main.target}" />
 	</target>
 
@@ -176,22 +176,7 @@
 		</exec>
 	</target>
 
-	<target name="composer" depends="composer-require, composer-update">
-	</target>
-
-	<target name="composer-check" description="Check for the composer.lock file">
-		<available file="${basedir}/composer.lock" property="run.composer" />
-	</target>
-
-	<target name="composer-require" depends="composer-check" unless="${run.composer}" description="Install dependencies">
-		<exec executable="${composer.exec}" dir="${basedir}" failonerror="true">
-			<arg value="require" />
-			<arg value="--prefer-dist" />
-			<arg value="-o" />
-		</exec>
-	</target>
-
-	<target name="composer-update" depends="composer-check" if="${run.composer}" description="Update dependencies">
+	<target name="composer">
 		<exec executable="${composer.exec}" dir="${basedir}" failonerror="true">
 			<arg value="update" />
 			<arg value="-o" />
