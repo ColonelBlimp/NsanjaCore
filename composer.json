@@ -13,5 +13,11 @@
 	},
 	"require-dev" : {
 		"phpunit/phpunit" : "~6.5.7"
-	}
+	},
+	"description" : "The core for the Nsanja platform",
+	"homepage" : "https://github.com/ColonelBlimp/NsanjaCore",
+	"authors" : [{
+			"name" : "ColonelBlimp"
+		}
+	]
 }
