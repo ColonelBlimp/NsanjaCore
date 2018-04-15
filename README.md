@@ -1,4 +1,4 @@
-# OrchidCore
+# NsanjaCore
 
 [![Build Status](https://scrutinizer-ci.com/g/ColonelBlimp/NsanjaCore/badges/build.png?b=master)](https://scrutinizer-ci.com/g/ColonelBlimp/NsanjaCore/build-status/master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ColonelBlimp/NsanjaCore/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ColonelBlimp/NsanjaCore/?branch=master)

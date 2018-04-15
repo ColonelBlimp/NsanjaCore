@@ -6,7 +6,7 @@
 	colors="true">
 
     <testsuites>
-        <testsuite name="Orchid Unit Tests">
+        <testsuite name="NsanjaCore Unit Tests">
             <directory>./tests</directory>
         </testsuite>
     </testsuites>

@@ -3,7 +3,7 @@
 namespace Nsanja\Core;
 
 /**
- * This interface defines the constants used by the Orchid platform and are at it's core. The reason why
+ * This interface defines the constants used by the Nsanja platform and are at it's core. The reason why
  * this is interface used rather than <code>define</code> within a file is that this interface can be namespaced!
  * @author Marc L. Veary
  * @namespace Nsanja\Core
