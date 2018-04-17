@@ -27,29 +27,29 @@ interface Constants
     public const JSON_FILE_EXT = '.json';
 
     /**
-     * Defines the prefix for any author URI (e.g. [FQDN]/author/slug)
+     * Defines the prefix for any author URI (e.g. author/{slug})
      */
-    public const URI_PREFIX_AUTHOR = 'author';
+    public const URI_PREFIX_AUTHOR = 'author/';
 
     /**
-     * Defines the prefix for any category URI (e.g. [FQDN]/category/slug)
+     * Defines the prefix for any category URI (e.g. category/{slug})
      */
-    public const URI_PREFIX_CATEGORY = 'category';
+    public const URI_PREFIX_CATEGORY = 'category/';
 
     /**
-     * Defines the prefix for any image URI (e.g. [FQDN]/image/slug)
+     * Defines the prefix for any image URI (e.g. image/{slug})
      */
-    public const URI_PREFIX_IMAGE = 'image';
+    public const URI_PREFIX_IMAGE = 'image/';
 
     /**
-     * Defines the prefix for any page URI (e.g. [FQDN]/page/slug)
+     * Defines the prefix for any page URI (e.g. page/{slug})
      */
-    public const URI_PREFIX_PAGE = 'page';
+    public const URI_PREFIX_PAGE = 'page/';
 
     /**
-     * Defines the prefix for any label URI (e.g. [FQDN]/label/slug)
+     * Defines the prefix for any label URI (e.g. label/{slug})
      */
-    public const URI_PREFIX_LABEL = 'label';
+    public const URI_PREFIX_LABEL = 'label/';
 
     /**
      * Defines the URI for the default category ([FQDN]/category/uncategorized)
@@ -72,7 +72,7 @@ interface Constants
     public const STR_PAGING_CTX = '/pg/';
 
     /**
-     * Defines the mode for use with <code>mkdir</code>.
+     * Defines the mode (0775) for use with <code>mkdir</code>.
      */
     public const FILE_MODE = 0775;
 }
