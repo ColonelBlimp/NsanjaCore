@@ -52,9 +52,9 @@ interface Constants
     public const URI_PREFIX_LABEL = 'label/';
 
     /**
-     * Defines the URI for the default category ([FQDN]/category/uncategorized)
+     * Defines the URI for the default category (category/uncategorized)
      */
-    public const DEFAULT_CATEGORY_SLUG = Constants::URI_PREFIX_CATEGORY.'/uncategorized';
+    public const DEFAULT_CATEGORY_SLUG = Constants::URI_PREFIX_CATEGORY.'uncategorized';
 
     /**
      * Defines the deafult date format.
