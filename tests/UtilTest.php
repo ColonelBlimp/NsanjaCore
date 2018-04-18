@@ -64,6 +64,6 @@ class UtilTest extends TestCase
     {
         $util = new Util();
         $files = $util->scanDirectory(__DIR__);
-        $this->assertTrue(count($files) === 3);
+        $this->assertTrue(count($files) === 4);
     }
 }
