@@ -1,11 +1,11 @@
 <?php declare(strict_types = 1);
 
-namespace Nsanja\Core;
+namespace Nsanja\Core\Type;
 
 /**
  * Collection.
  * @author Marc L. Veary
- * @namespace Nsanja\Core
+ * @namespace Nsanja\Core\Type
  * @package Nsanja
  */
 class Collection implements CollectionInterface
@@ -25,7 +25,7 @@ class Collection implements CollectionInterface
 
     /**
      * {@inheritDoc}
-     * @see \Nsanja\Core\CollectionInterface::all()
+     * @see \Nsanja\Core\Type\CollectionInterface::all()
      */
     public function all(): array
     {
@@ -52,7 +52,7 @@ class Collection implements CollectionInterface
 
     /**
      * {@inheritDoc}
-     * @see \Nsanja\Core\CollectionInterface::set()
+     * @see \Nsanja\Core\Type\CollectionInterface::set()
      */
     public function set(string $key, $value): void
     {
@@ -70,7 +70,7 @@ class Collection implements CollectionInterface
 
     /**
      * {@inheritDoc}
-     * @see \Nsanja\Core\CollectionInterface::get()
+     * @see \Nsanja\Core\Type\CollectionInterface::get()
      */
     public function get(string $key, $default = null)
     {
@@ -88,7 +88,7 @@ class Collection implements CollectionInterface
 
     /**
      * {@inheritDoc}
-     * @see \Nsanja\Core\CollectionInterface::clear()
+     * @see \Nsanja\Core\Type\CollectionInterface::clear()
      */
     public function clear(): void
     {
@@ -106,7 +106,7 @@ class Collection implements CollectionInterface
 
     /**
      * {@inheritDoc}
-     * @see \Nsanja\Core\CollectionInterface::has()
+     * @see \Nsanja\Core\Type\CollectionInterface::has()
      */
     public function has(string $key): bool
     {
@@ -124,7 +124,7 @@ class Collection implements CollectionInterface
 
     /**
      * {@inheritDoc}
-     * @see \Nsanja\Core\CollectionInterface::remove()
+     * @see \Nsanja\Core\Type\CollectionInterface::remove()
      */
     public function remove(string $key): void
     {
@@ -133,7 +133,7 @@ class Collection implements CollectionInterface
 
     /**
      * {@inheritDoc}
-     * @see \Nsanja\Core\CollectionInterface::replace()
+     * @see \Nsanja\Core\Type\CollectionInterface::replace()
      */
     public function replace(array $items): void
     {

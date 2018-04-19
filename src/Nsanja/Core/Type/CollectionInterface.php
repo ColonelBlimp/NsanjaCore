@@ -1,7 +1,13 @@
 <?php declare(strict_types = 1);
 
-namespace Nsanja\Core;
+namespace Nsanja\Core\Type;
 
+/**
+ * Defines the contract for a Collection object.
+ * @author Marc L. Veary
+ * @namespace Nsanja\Core\Type
+ * @package Nsanja
+ */
 interface CollectionInterface extends \ArrayAccess, \Countable, \IteratorAggregate
 {
     /**
