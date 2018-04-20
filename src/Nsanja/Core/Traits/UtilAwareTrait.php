@@ -12,7 +12,7 @@ use Nsanja\Core\Util;
  */
 trait UtilAwareTrait
 {
-    protected $util;
+    private $util;
 
     /**
      * Set an instance of the Util class.
