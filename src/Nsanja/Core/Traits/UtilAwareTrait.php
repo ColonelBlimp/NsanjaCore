@@ -1,14 +1,16 @@
 <?php declare(strict_types = 1);
 
-namespace Nsanja\Core;
+namespace Nsanja\Core\Traits;
+
+use Nsanja\Core\Util;
 
 /**
- * Abstract class which makes its sub-class Util aware.
+ * This trait makes a sub Util aware. The Util instance can be set and fetched using the provided methods.
  * @author Marc L. Veary
- * @namespace Nsanja\Core
+ * @namespace Nsanja\Core\Traits
  * @package Nsanja
  */
-abstract class UtilAwareAbstract
+trait UtilAwareTrait
 {
     protected $util;
 

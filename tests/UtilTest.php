@@ -1,8 +1,8 @@
 <?php declare(strict_types = 1);
 
 use Nsanja\Core\Util;
+use Nsanja\Core\Traits\UtilAwareTrait;
 use PHPUnit\Framework\TestCase;
-use Nsanja\Core\UtilAwareAbstract;
 
 class UtilTest extends TestCase
 {
@@ -96,7 +96,7 @@ class UtilTest extends TestCase
     }
 }
 
-class UtilAware extends UtilAwareAbstract
+class UtilAware
 {
-
+    use UtilAwareTrait;
 }
