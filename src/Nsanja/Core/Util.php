@@ -10,6 +10,25 @@ namespace Nsanja\Core;
 final class Util
 {
     /**
+     * Creates a teaser (stripped of markdown) to the given length.
+     * @param string $string
+     * @param int $length The default length is 150 characters.
+     * @return string Returns the teaser string, or an empty string.
+     */
+    public function createTeaser(string $string, int $length = 150): string
+    {
+        $string = $this->markdownToText($string);
+        $suffix = ' ';
+
+        if (strlen($string) > $length) {
+            $length = $length - 4;
+            $suffix = '... ';
+        }
+
+        return substr($string, 0, $length).$suffix;
+    }
+
+    /**
      * Scans the given directory and its sub-directories and returns a list of all the files
      * @return array
      */

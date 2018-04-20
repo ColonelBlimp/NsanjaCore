@@ -2,6 +2,7 @@
 
 use Nsanja\Core\Util;
 use PHPUnit\Framework\TestCase;
+use Nsanja\Core\UtilAwareAbstract;
 
 class UtilTest extends TestCase
 {
@@ -66,4 +67,36 @@ class UtilTest extends TestCase
         $files = $util->scanDirectory(__DIR__);
         $this->assertTrue(count($files) === 4);
     }
+
+    public function testTeaser()
+    {
+        $util = new Util();
+        $text = $this->mdText.' this is a load of rubbish padded in to this string to give the length that is needed.';
+        $teaser = $util->createTeaser($text);
+        $this->assertTrue(strlen($teaser) === 150);
+    }
+
+    public function testUtilAware()
+    {
+        $util = new Util();
+        $class = new UtilAware();
+        $class->setUtil($util);
+        $this->assertInstanceOf(Util::class, $class->getUtil());
+    }
+
+    /**
+     * @expectedException Exception
+     * @expectedExceptionMessage Util instance not set. Please call 'setUtil()' first
+     */
+    public function testUtilAwareException()
+    {
+        $util = new Util();
+        $class = new UtilAware();
+        $class->getUtil();
+    }
+}
+
+class UtilAware extends UtilAwareAbstract
+{
+
 }
