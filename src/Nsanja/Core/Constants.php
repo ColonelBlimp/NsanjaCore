@@ -12,67 +12,67 @@ namespace Nsanja\Core;
 interface Constants
 {
     /**
-     * A shortened version of DIRECTORY_SEPARATOR
+     * @var string A shortened version of DIRECTORY_SEPARATOR
      */
     public const DS = DIRECTORY_SEPARATOR;
 
     /**
-     * Defines the separator between parts of the cachekey and is used to replace '/'.
+     * @var string Defines the separator between parts of the cachekey and is used to replace '/'.
      */
     public const CACHEKEY_SEPARATOR = '#';
 
     /**
-     * Defines the extension for JSON files.
+     * @var string Defines the extension for JSON files.
      */
     public const JSON_FILE_EXT = '.json';
 
     /**
-     * Defines the prefix for any author URI (e.g. author/{slug})
+     * @var string Defines the prefix for any author URI (e.g. author/{slug})
      */
     public const URI_PREFIX_AUTHOR = 'author/';
 
     /**
-     * Defines the prefix for any category URI (e.g. category/{slug})
+     * @var string Defines the prefix for any category URI (e.g. category/{slug})
      */
     public const URI_PREFIX_CATEGORY = 'category/';
 
     /**
-     * Defines the prefix for any image URI (e.g. image/{slug})
+     * @var string Defines the prefix for any image URI (e.g. image/{slug})
      */
     public const URI_PREFIX_IMAGE = 'image/';
 
     /**
-     * Defines the prefix for any page URI (e.g. page/{slug})
+     * @var string Defines the prefix for any page URI (e.g. page/{slug})
      */
     public const URI_PREFIX_PAGE = 'page/';
 
     /**
-     * Defines the prefix for any label URI (e.g. label/{slug})
+     * @var string Defines the prefix for any label URI (e.g. label/{slug})
      */
     public const URI_PREFIX_LABEL = 'label/';
 
     /**
-     * Defines the URI for the default category (category/uncategorized)
+     * @var string Defines the URI for the default category (category/uncategorized)
      */
     public const DEFAULT_CATEGORY_SLUG = Constants::URI_PREFIX_CATEGORY.'uncategorized';
 
     /**
-     * Defines the deafult date format.
+     * @var string Defines the deafult date format.
      */
     public const DEFAULT_DATE_FORMAT = 'Ymdhis';
 
     /**
-     * Defines a forward slash for URLs ('/').
+     * @var string Defines a forward slash for URLs ('/').
      */
     public const STR_FORWARD_SLASH = '/';
 
     /**
-     * Defines the context for pagination (e.g. /root_content/pg/1 = page 1 for 'root_context').
+     * @var string Defines the context for pagination (e.g. /root_content/pg/1 = page 1 for 'root_context').
      */
     public const STR_PAGING_CTX = '/pg/';
 
     /**
-     * Defines the mode (0775) for use with <code>mkdir</code>.
+     * @var int Defines the mode (0775) for use with <code>mkdir</code>.
      */
     public const FILE_MODE = 0775;
 }
